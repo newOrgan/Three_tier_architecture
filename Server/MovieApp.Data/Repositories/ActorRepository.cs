@@ -9,7 +9,7 @@ using System.Text;
 
 namespace MovieApp.Data.Repositories
 {
-    public class ActorRepository : Repository<Actor>
+    public class ActorRepository : Repository<Actor>, IActorRepository
     {
         public ActorRepository(MovieAppContext context) : base (context)
         {

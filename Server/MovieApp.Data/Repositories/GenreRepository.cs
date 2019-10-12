@@ -8,7 +8,7 @@ using System.Text;
 
 namespace MovieApp.Data.Repositories
 {
-    public class GenreRepository : Repository<Genre>
+    public class GenreRepository : Repository<Genre>, IGenreRepository
     {
         public GenreRepository(MovieAppContext context) : base(context)
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MovieApp.Data.Interfaces
 {
-    public interface IGenreRepository : IRepository<Genre>
+    public interface IGenreRepository: IRepository<Genre>
     {
     }
 }

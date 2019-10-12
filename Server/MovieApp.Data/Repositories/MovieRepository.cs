@@ -9,10 +9,15 @@ using System.Text;
 
 namespace MovieApp.Data.Repositories
 {
-    public class MovieRepository : Repository<Movie>
+    public class MovieRepository : Repository<Movie>, IMovieRepository
     {
         public MovieRepository(MovieAppContext context) : base(context)
         {
+        }
+
+        public MovieAppContext Context
+        {
+            get => Context as MovieAppContext;
         }
     }
 }

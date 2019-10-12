@@ -18,11 +18,6 @@ namespace MovieApp.Data.EF.Configurations
                 .IsRequired(true)
                 .HasMaxLength(20);
 
-            builder.HasOne<Genre>()
-                .WithMany(m => m.Movies)
-                .HasForeignKey(m => m.GenreId)
-                .HasConstraintName("FK_Movie_Genre");
-
 
         }
     }

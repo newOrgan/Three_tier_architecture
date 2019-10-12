@@ -7,6 +7,5 @@ namespace MovieApp.Data.Interfaces
 {
     public interface IMovieRepository : IRepository<Movie>
     {
-        Movie GetMovieWithActors(int id);
     }
 }

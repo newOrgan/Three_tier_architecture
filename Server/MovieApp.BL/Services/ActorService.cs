@@ -22,20 +22,10 @@ namespace MovieApp.BL.Services
             this.mapper = mapper;
         }
 
-        public IEnumerable<Actor> Find() => 
-           
-
         public IEnumerable<ActorDTO> GetAll() =>
             mapper.Map<IEnumerable<Actor>, IEnumerable<ActorDTO>>(Db.Actors.GetAll());
 
-        public void GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+        public ActorDTO GetById(int id) =>
+            mapper.Map<ActorDTO>(Db.Actors.GetById(id));
     }
 }

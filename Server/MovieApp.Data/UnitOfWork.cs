@@ -10,18 +10,29 @@ namespace MovieApp.Data
     {
         private readonly MovieAppContext context;
 
-        public IMovieRepository Movies { get; private set; }
-        public IActorRepository Actors { get; private set; }
-        public IGenreRepository Genres { get; set; }
+        private IMovieRepository _movies;
+        public IMovieRepository Movies
+        {
+            get => _movies ?? (_movies = new MovieRepository(context));
+        }
 
-        public UnitOfWork( MovieAppContext context)
+        private IActorRepository _actors;
+        public IActorRepository Actors
+        {
+            get => _actors ?? (_actors = new ActorRepository(context));
+        }
+
+        private IGenreRepository _genres;
+        public IGenreRepository Genres
+        {
+            get => _genres ?? (_genres = new GenreRepository(context));
+        }
+
+        public UnitOfWork(MovieAppContext context)
         {
             this.context = context;
-            Movies = new MovieRepository(this.context);
-            Actors = new ActorRepository(this.context);
-            Genres = new GenreRepository(this.context);
         }
-        
+
         public int Save()
         {
             return context.SaveChanges();

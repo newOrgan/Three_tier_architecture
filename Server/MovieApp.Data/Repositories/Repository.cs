@@ -11,7 +11,7 @@ namespace MovieApp.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
-        protected readonly DbContext context;
+        private readonly DbContext context;
 
         public Repository(DbContext context)
         {

@@ -9,6 +9,7 @@ namespace MovieApp.Data.Interfaces
     {
         IMovieRepository Movies { get; }
         IActorRepository Actors { get; }
+        IGenreRepository Genres { get; }
         int Save();
     }
 }

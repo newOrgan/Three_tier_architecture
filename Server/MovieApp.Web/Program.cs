@@ -16,20 +16,7 @@ namespace MovieApp.Web
         public async static Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-
-            using var scope = host.Services.CreateScope();
-            var services = scope.ServiceProvider;
-            var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-            try
-            {
-                var movieAppContext = services.GetRequiredService<MovieAppContext>();
-                await DbInitilize.Seed(movieAppContext);
-            }
-            catch (Exception ex)
-            {
-                var logger = loggerFactory.CreateLogger<Program>();
-                logger.LogError(ex, "An error occurred seeding the DB.");
-            }
+            await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
