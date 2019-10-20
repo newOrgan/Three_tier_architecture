@@ -4879,11 +4879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RNJIN\\MovieApp\\MovieApp.BL\\MovieApp.BL.csproj",
+      "projectUniqueName": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.BL\\MovieApp.BL.csproj",
       "projectName": "MovieApp.BL",
-      "projectPath": "D:\\RNJIN\\MovieApp\\MovieApp.BL\\MovieApp.BL.csproj",
+      "projectPath": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.BL\\MovieApp.BL.csproj",
       "packagesPath": "C:\\Users\\Уран\\.nuget\\packages\\",
-      "outputPath": "D:\\RNJIN\\MovieApp\\MovieApp.BL\\obj\\",
+      "outputPath": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4904,8 +4904,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\RNJIN\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj": {
-              "projectPath": "D:\\RNJIN\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj"
+            "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.Data\\MovieApp.Data.csproj": {
+              "projectPath": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.Data\\MovieApp.Data.csproj"
             }
           }
         }

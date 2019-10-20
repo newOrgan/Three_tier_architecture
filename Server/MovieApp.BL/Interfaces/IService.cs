@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieApp.Data.EF;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MovieApp.BL.Interfaces
 {
     public interface IService<TEntity> where TEntity : class
     {
-        IEnumerable<TEntity> GetAll();
-        TEntity GetById(int id);
-
+        Task<TEntity> GetById(int id);
     }
 }

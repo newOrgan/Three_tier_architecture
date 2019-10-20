@@ -4,12 +4,11 @@ using System.Text;
 
 namespace MovieApp.Data.Entities
 {
-    public class MovieGenres : BaseEntity
+    public class ShowTime : BaseEntity
     {
+        public DateTime Date { get; set; }
+        public string Time { get; set; }
         public int MovieId { get; set; }
         public Movie Movie { get; set; }
-
-        public int GenreId { get; set; }
-        public Genre Genre { get; set; }
     }
 }

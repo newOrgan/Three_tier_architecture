@@ -18,12 +18,12 @@ namespace MovieApp.Web.Controllers
             this.actorService = actorService;
         }
 
-        [HttpGet("{id}")]
-        public IActionResult Get(int id) =>
-            Ok(actorService.GetById(id));
+        [HttpGet("{id?}")]
+        public async Task<IActionResult> Get(int id) =>
+            Ok(await actorService.GetById(id));
 
         [HttpGet]
-        public IActionResult Get() =>
-            Ok(actorService.GetAll());
+        public async Task<IActionResult> GetActorsByMovie(int id) =>
+            Ok(actorService.GetMovieActors(id));
     }
 }

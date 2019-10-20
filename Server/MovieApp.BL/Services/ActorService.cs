@@ -1,31 +1,31 @@
-﻿using MovieApp.BL.DTOs;
+﻿using Microsoft.EntityFrameworkCore;
 using MovieApp.BL.Interfaces;
+using MovieApp.Data.EF;
 using MovieApp.Data.Entities;
-using MovieApp.Data.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
-using MovieApp.BL;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MovieApp.BL.Services
 {
     public class ActorService : IActorService
     {
-        private IUnitOfWork Db { get; set; }
-        private readonly IMapper mapper;
-
-        public ActorService(IUnitOfWork uow, IMapper mapper)
+        private readonly MovieAppContext Context;
+        public ActorService(MovieAppContext context)
         {
-            Db = uow;
-            this.mapper = mapper;
+            Context = context;
         }
 
-        public IEnumerable<ActorDTO> GetAll() =>
-            mapper.Map<IEnumerable<Actor>, IEnumerable<ActorDTO>>(Db.Actors.GetAll());
+        public async Task<Actor> GetById(int id)
+        {
+            return await Context.Actors.FindAsync(id);
+        }
 
-        public ActorDTO GetById(int id) =>
-            mapper.Map<ActorDTO>(Db.Actors.GetById(id));
+        public async Task<IEnumerable<Actor>> GetMovieActors(int id)
+        {
+            return await Context.Actors.Where(a => a.ActorMovies.Any(am => am.MovieId == id)).ToListAsync();
+        }
     }
 }

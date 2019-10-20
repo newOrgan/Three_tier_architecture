@@ -12,11 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MovieApp.Data.EF;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using AutoMapper;
 using MovieApp.BL;
-using MovieApp.Data.Interfaces;
-using MovieApp.Data;
 
 namespace MovieApp.Web
 {
@@ -35,7 +31,6 @@ namespace MovieApp.Web
             services.AddControllers();
             services.AddDbContext<MovieAppContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.ServicesDI();
-            services.Add(new ServiceDescriptor(typeof(IUnitOfWork), typeof(UnitOfWork), ServiceLifetime.Scoped));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

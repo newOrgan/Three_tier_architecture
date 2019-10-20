@@ -5302,11 +5302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RNJIN\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj",
+      "projectUniqueName": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.Data\\MovieApp.Data.csproj",
       "projectName": "MovieApp.Data",
-      "projectPath": "D:\\RNJIN\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj",
+      "projectPath": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.Data\\MovieApp.Data.csproj",
       "packagesPath": "C:\\Users\\Уран\\.nuget\\packages\\",
-      "outputPath": "D:\\RNJIN\\MovieApp\\MovieApp.Data\\obj\\",
+      "outputPath": "D:\\RNJIN\\Three_tier_architecture\\Server\\MovieApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

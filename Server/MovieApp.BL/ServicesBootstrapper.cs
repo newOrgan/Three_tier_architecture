@@ -13,7 +13,8 @@ namespace MovieApp.BL
         public static void ServicesDI (this IServiceCollection services)
         {
             services.AddTransient<IActorService, ActorService>();
-            services.AddAutoMapper(typeof(MapperConfiguration));
+            services.AddTransient<IMovieService, MovieService>();
+            services.AddTransient<IShowTimeService, ShowTimeService>();
         }
     }
 }
