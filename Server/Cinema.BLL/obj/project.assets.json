@@ -3174,11 +3174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.BLL\\Cinema.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.BLL\\Cinema.BLL.csproj",
       "projectName": "Cinema.BLL",
-      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.BLL\\Cinema.BLL.csproj",
+      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.BLL\\Cinema.BLL.csproj",
       "packagesPath": "C:\\Users\\Uran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.BLL\\obj\\",
+      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3199,8 +3199,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj": {
-              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj"
+            "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj": {
+              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj"
             }
           }
         }

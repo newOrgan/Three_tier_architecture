@@ -3145,11 +3145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj",
       "projectName": "Cinema.DAL",
-      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj",
+      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj",
       "packagesPath": "C:\\Users\\Uran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

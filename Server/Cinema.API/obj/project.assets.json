@@ -13038,11 +13038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.API\\Cinema.API.csproj",
+      "projectUniqueName": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.API\\Cinema.API.csproj",
       "projectName": "Cinema.API",
-      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.API\\Cinema.API.csproj",
+      "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.API\\Cinema.API.csproj",
       "packagesPath": "C:\\Users\\Uran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.API\\obj\\",
+      "outputPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13063,11 +13063,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.BLL\\Cinema.BLL.csproj": {
-              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.BLL\\Cinema.BLL.csproj"
+            "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.BLL\\Cinema.BLL.csproj": {
+              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.BLL\\Cinema.BLL.csproj"
             },
-            "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj": {
-              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\AexTest\\Cinema.DAL\\Cinema.DAL.csproj"
+            "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj": {
+              "projectPath": "C:\\Users\\Uran\\Desktop\\Actors\\Server\\Cinema.DAL\\Cinema.DAL.csproj"
             }
           }
         }
